@@ -1,0 +1,145 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: #0d47a1;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.destaque {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.5rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.destaque img {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
+.destaque h2 {
+  color: #0d47a1;
+  margin-bottom: 0.5rem;
+}
+
+.beneficios {
+  background: #e3f2fd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.beneficios h3 {
+  color: #0d47a1;
+  margin-bottom: 1rem;
+}
+
+.beneficios ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+.beneficios li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.contato {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin-bottom: 2rem;
+}
+
+.contato h3 {
+  color: #0d47a1;
+  margin-bottom: 1rem;
+}
+
+.contato a {
+  color: #1565c0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contato a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #0d47a1;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+  border-radius: 0 0 10px 10px;
+  margin: 0 1rem 1rem 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+  .destaque {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1rem;
+  }
+  main {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+  .destaque img {
+    width: 100%;
+    max-width: 250px;
+  }
+  .beneficios, .contato {
+    padding: 1rem;
+  }
+  footer {
+    font-size: 0.85rem;
+    margin: 0 0.2rem 0.5rem 0.2rem;
+  }
+}
