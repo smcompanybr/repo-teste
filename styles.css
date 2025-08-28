@@ -7,25 +7,29 @@
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f7f7f7;
-  color: #222;
+  background: #18191a;
+  color: #e0e0e0;
   line-height: 1.6;
 }
 
 header {
-  background: #0d47a1;
-  color: #fff;
+  background: #232526;
+  color: #f5f5f5;
   text-align: center;
   padding: 2rem 1rem 1rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 header h1 {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
+  letter-spacing: 1px;
 }
 
 header p {
   font-size: 1.1rem;
+  font-style: italic;
+  color: #bdbdbd;
 }
 
 main {
@@ -37,9 +41,9 @@ main {
 .destaque {
   display: flex;
   align-items: center;
-  background: #fff;
+  background: #232526;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
   padding: 1.5rem;
   gap: 2rem;
   margin-bottom: 2rem;
@@ -51,23 +55,29 @@ main {
   height: auto;
   border-radius: 8px;
   object-fit: cover;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.18);
+  filter: grayscale(70%);
 }
 
 .destaque h2 {
-  color: #0d47a1;
+  color: #ffd600;
   margin-bottom: 0.5rem;
 }
 
+.destaque p {
+  color: #e0e0e0;
+}
+
 .beneficios {
-  background: #e3f2fd;
+  background: #232526;
   border-radius: 10px;
   padding: 1.5rem;
   margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
 .beneficios h3 {
-  color: #0d47a1;
+  color: #ffd600;
   margin-bottom: 1rem;
 }
 
@@ -79,39 +89,43 @@ main {
 .beneficios li {
   margin-bottom: 0.5rem;
   font-size: 1.05rem;
+  color: #e0e0e0;
 }
 
 .contato {
-  background: #fff;
+  background: #18191a;
   border-radius: 10px;
   padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
   margin-bottom: 2rem;
+  border: 1px solid #232526;
 }
 
 .contato h3 {
-  color: #0d47a1;
+  color: #ffd600;
   margin-bottom: 1rem;
 }
 
 .contato a {
-  color: #1565c0;
+  color: #ffd600;
   text-decoration: none;
   font-weight: 500;
 }
 
 .contato a:hover {
   text-decoration: underline;
+  color: #fffde7;
 }
 
 footer {
-  background: #0d47a1;
-  color: #fff;
+  background: #232526;
+  color: #bdbdbd;
   text-align: center;
   padding: 1rem;
   font-size: 0.95rem;
   border-radius: 0 0 10px 10px;
   margin: 0 1rem 1rem 1rem;
+  letter-spacing: 0.5px;
 }
 
 /* Responsividade */
